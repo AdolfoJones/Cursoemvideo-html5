@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias</title>
+</head>
+<body>
+    <h1>Imagem dinamica</h1>
+    <p>Abrir sites</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+        
+        <h1>Adicionar adudio</h1>
+        <audio src="midia/Zen Valley - Josh Kirsch_Media Right Productions.mp3" controls autoplay></audio>
+
+        <audio preload="metadata" autoplay controls loop> 
+            <source src="midia/Zen Valley - Josh Kirsch_Media Right Productions.mp3" type="audio/mp3">
+            <p>baixe o arquivo <a href="midia/Zen Valley - Josh Kirsch_Media Right Productions.mp3"></a></p>
+            <h1>Reprodução de videos</h1>
+            <p>Clique aqui para ver o video</p>
+            <video width="500" controls>
+                <source src="Videos/video-musica.mp4" type="video/mp4">
+            </video>
+        </audio>
+    </picture>
+</body>
+</html>
